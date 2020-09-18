@@ -1,18 +1,30 @@
 import React from "react"
-import { Link } from "gatsby"
-
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
-//import Image from "../components/image"
 import SEO from "../components/seo"
-import { FaGulp } from "react-icons/fa"
+import Hero from "../components/hero"
 
-const IndexPage = () => (
+const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <FaGulp />
+    <Hero
+      img={data.img.childImageSharp.fluid}
+      title="web developer"
+      styleClass="bg"
+    />
   </Layout>
 )
+
+export const query = graphql`
+  {
+    img: file(relativePath: { eq: "bg.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_tracedSVG
+        }
+      }
+    }
+  }
+`
 
 export default IndexPage

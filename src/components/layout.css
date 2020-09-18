@@ -30,3 +30,16 @@ h6 {
   color: var(--mainButton);
   font-size: 2rem;
 }
+/*hero*/
+.bg {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    rgba(255, 255, 255, 228, 0.2),
+    rgba(255, 255, 255, 222, 0.2)
+  );
+  background-position: center;
+  background-size: cover;
+}

@@ -5,13 +5,13 @@ import SEO from "../components/seo"
 import Hero from "../components/hero"
 import Info from "../components/Home/Info"
 
-const IndexPage = ({ data }) => (
+const AboutPage = ({ data }) => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="About" />
     <Hero
       img={data.img.childImageSharp.fluid}
-      title="web developer"
-      styleClass="bg"
+      title="about us"
+      styleClass="about-bg"
     />
     <Info />
   </Layout>
@@ -19,7 +19,7 @@ const IndexPage = ({ data }) => (
 
 export const query = graphql`
   {
-    img: file(relativePath: { eq: "bg.png" }) {
+    img: file(relativePath: { eq: "about-bg.png" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid_tracedSVG
@@ -29,4 +29,4 @@ export const query = graphql`
   }
 `
 
-export default IndexPage
+export default AboutPage

@@ -5,7 +5,8 @@
   --mainHero: #cacfcb;
   --mainOrange: orange;
   --mainButton: #335a55;
-  --fontColor: coral;
+  --fontColor: #335a55;
+  --fontCoral: coral;
   --footer: #112215;
 }
 body {
@@ -31,7 +32,8 @@ h6 {
   font-size: 2rem;
 }
 /*hero*/
-.bg {
+.bg,
+.about-bg {
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -42,4 +44,22 @@ h6 {
   );
   background-position: center;
   background-size: cover;
+}
+.about-bg {
+  min-height: 70vh;
+}
+
+/*button*/
+.btn-color {
+  color: var(--mainButton);
+  border-color: var(--mainButton);
+}
+.btn-color:hover {
+  background: var(--mainButton);
+  color: var(--fontCoral);
+}
+
+/*footer*/
+.footer {
+  background: var(--footer);
 }

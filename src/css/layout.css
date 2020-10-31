@@ -1,5 +1,6 @@
 :root {
   --mainCard: #6f9e9c;
+  --mainGrey: hsl(210, 36%, 96%);
   --navColor: #648678;
   --mainWhite: #fff;
   --mainHero: #cacfcb;
@@ -24,6 +25,9 @@ h6 {
   letter-spacing: 0.25rem !important;
 }
 .text-carol {
+  color: var(--fontColor);
+}
+.price-color {
   color: var(--fontColor);
 }
 .cart-icon {
@@ -55,8 +59,12 @@ h6 {
   border-color: var(--mainButton);
 }
 .btn-color:hover {
-  background: var(--mainButton);
+  background: var(--fontCoral);
   color: var(--fontCoral);
+}
+/*menu*/
+.menu {
+  background: var(--mainGrey);
 }
 
 /*footer*/

@@ -4,7 +4,7 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `Shop Online`,
+    title: `Pizza Online`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
   },
@@ -25,6 +25,13 @@ module.exports = {
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
+    {
+			resolve: 'gatsby-plugin-snipcart',
+			options: {
+        apiKey: process.env.SNIPCART_API,
+        autopop:true
+			}
+		}
   
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,

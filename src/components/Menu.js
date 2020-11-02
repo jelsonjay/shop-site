@@ -66,7 +66,7 @@ const getCategory = items =>{
         <h6 className='mb-0'>
         <small>{node.title}</small>
         </h6>
-        <h6 className='mb-0'>
+        <h6 className='price_color mb-0'>
         <small>£{node.price}</small>
         </h6>
         </div>

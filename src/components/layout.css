@@ -1,0 +1,79 @@
+:root {
+  --mainCard: #6f9e9c;
+  --mainGrey: hsl(210, 36%, 96%);
+  --navColor: #648678;
+  --mainWhite: #fff;
+  --mainHero: #cacfcb;
+  --mainOrange: orange;
+  --mainButton: #335a55;
+  --fotColor: #335a55;
+  --fontCoral: coral;
+  --footer: #112215;
+}
+body {
+  background: var(--mainWhite);
+  font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+  color: var(--fontColor);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Courier New", Courier, monospace !important;
+  letter-spacing: 0.25rem !important;
+}
+.text-carol {
+  color: var(--fontColor);
+}
+.price_color {
+  color: var(--fontCoral);
+}
+.cart-icon {
+  cursor: pointer;
+  color: var(--mainButton);
+  font-size: 2rem;
+}
+/*hero*/
+.bg,
+.about-bg {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    rgba(255, 255, 255, 228, 0.2),
+    rgba(255, 255, 255, 222, 0.2)
+  );
+  background-position: center;
+  background-size: cover;
+}
+.about-bg {
+  min-height: 70vh;
+}
+
+/*button*/
+.btn-color {
+  color: var(--mainButton);
+  border-color: var(--mainButton);
+}
+.btn-color:hover {
+  background: var(--fontCoral);
+  color: var(--mainWhite);
+}
+/*menu*/
+.menu {
+  background: var(--mainGrey);
+}
+/*menu*/
+.contact {
+  background: var(--mainGrey);
+}
+
+/*footer*/
+.footer {
+  line-height: 1.5rem;
+  background: var(--footer);
+  color: var(--mainWhite);
+}
